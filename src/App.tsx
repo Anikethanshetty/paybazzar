@@ -13,6 +13,9 @@ import Profile from "./pages/Profile";
 import ProfileUpdate from "./pages/ProfileUpdate";
 import Services from "./pages/Services";
 import UtilityPayments from "./pages/UtilityServices";
+import AePS from "./pages/Aeps";
+import AepsKyc from "./pages/Aeps2";
+import DigiKatha from "./pages/Digikhata";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +36,11 @@ const App = () => (
               <Route path="/profile/update" element={<ProfileUpdate />} />
               <Route path="/services" element={<Services />} />
               <Route path="/utility-payments" element={<UtilityPayments />} />
+              <Route path="/aeps" element={<AePS />} />
+              <Route path="/aeps2" element={<AepsKyc />} />
+              <Route path="/digikatha" element={<DigiKatha />} />
+
+
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
