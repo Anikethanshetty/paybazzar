@@ -143,15 +143,15 @@ export default function AePS() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="cash-withdrawal">
-                        💵 Cash Withdrawal
+                        Cash Withdrawal
                       </SelectItem>
                       <SelectItem value="balance-enquiry">
-                        📊 Balance Enquiry
+                        Balance Enquiry
                       </SelectItem>
                       <SelectItem value="mini-statement">
-                        📑 Mini Statement
+                        Mini Statement
                       </SelectItem>
-                      <SelectItem value="aadhaar-pay">🪪 Aadhaar Pay</SelectItem>
+                      <SelectItem value="aadhaar-pay">Aadhaar Pay</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

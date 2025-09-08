@@ -34,6 +34,7 @@ export default function Services() {
       commission: "₹5-15 per transaction",
       gradient: "from-blue-500 to-blue-600",
       category: "Banking",
+      route:"/aeps"
     },
     {
       id: "aeps-2",
@@ -45,6 +46,7 @@ export default function Services() {
       commission: "₹8-20 per transaction",
       gradient: "from-indigo-500 to-indigo-600",
       category: "Banking",
+      route:"/aeps2"
     },
     {
       id: "utilities-bill",
@@ -56,6 +58,7 @@ export default function Services() {
       commission: "0.5% - 2% commission",
       gradient: "from-green-500 to-green-600",
       category: "Bills",
+      route:"/utility-payments"
     },
     {
       id: "digi-khata-ppi",
@@ -67,6 +70,7 @@ export default function Services() {
       commission: "₹2-10 per transaction",
       gradient: "from-purple-500 to-purple-600",
       category: "Wallet",
+      route:"/digikatha"
     },
     {
       id: "dmt-1",
@@ -140,6 +144,8 @@ export default function Services() {
       selectedCategory === "All" || service.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
+
+  
 
   return (
     <div className="min-h-screen bg-background flex w-full">
@@ -296,7 +302,7 @@ export default function Services() {
                         </div>
 
                         <div className="flex gap-2">
-                          <Button className="flex-1" size="sm">
+                          <Button className="flex-1" size="sm" onClick={()=> window.location.replace(`${service.route}`)}>
                             Use Service
                           </Button>
                           <Button variant="outline" size="sm">

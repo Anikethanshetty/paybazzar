@@ -115,7 +115,7 @@ export default function Dashboard() {
       <main className="flex-1 p-6 space-y-6 overflow-auto">
         {/* Welcome Section */}
         <div className="paybazaar-gradient rounded-lg p-6 text-white">
-          <h1 className="text-2xl font-bold mb-2">Welcome back, John!</h1>
+          <h1 className="text-2xl font-bold mb-2">Welcome back,Srujan!</h1>
           <p className="text-white/90">
             Here's your business overview for today. You've processed ₹93,270 in transactions.
           </p>
